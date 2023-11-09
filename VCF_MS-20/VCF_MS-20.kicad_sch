@@ -4,6 +4,10 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Late MS-20 VCO / Eurorack")
+  )
+
   (lib_symbols
     (symbol "Amplifier_Operational:LM13700" (pin_names (offset 0.127)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (at 3.81 5.08 0)
@@ -867,6 +871,55 @@
         (pin passive line (at 0 -3.81 90) (length 1.27)
           (name "3" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "Device:R_Trim" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "R" (at 2.54 -2.54 90)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "R_Trim" (at -2.54 -0.635 90)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Footprint" "" (at -1.778 0 90)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "R res resistor variable potentiometer trimmer" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Trimmable resistor (preset resistor)" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "R_*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "R_Trim_0_1"
+        (rectangle (start -1.016 -2.54) (end 1.016 2.54)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.905 -1.905)
+            (xy 1.905 1.905)
+            (xy 2.54 1.27)
+            (xy 1.27 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "R_Trim_1_1"
+        (pin passive line (at 0 3.81 270) (length 1.27)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 90) (length 1.27)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -1965,7 +2018,7 @@
     )
     (pin "1" (uuid 31d6c3cf-a05b-4152-a101-3bb3555ab9b7))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR013") (unit 1)
         )
@@ -1976,7 +2029,7 @@
   (symbol (lib_id "Device:R_Potentiometer") (at 236.22 142.24 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 068e50c4-24cf-4123-9189-291be586ca43)
-    (property "Reference" "RV1/RESO1" (at 238.76 143.51 0)
+    (property "Reference" "RV1" (at 238.76 143.51 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k / log" (at 238.76 140.97 0)
@@ -1997,13 +2050,16 @@
     (property "Sim.Params" "r=50k" (at 236.22 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Note" "RESON." (at 229.87 144.78 0)
+      (effects (font (size 1.27 1.27) bold))
+    )
     (pin "1" (uuid 5e990ae5-a835-44ec-b5a6-651b63275563))
     (pin "2" (uuid 8388b587-3b42-4349-be19-599c9d93ebb0))
     (pin "3" (uuid de36e523-28dc-4997-adfb-e2744713b818))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
-          (reference "RV1/RESO1") (unit 1)
+          (reference "RV1") (unit 1)
         )
       )
     )
@@ -2027,7 +2083,7 @@
     (pin "1" (uuid 456e44b8-2a8e-4194-8daa-b78aeed6956b))
     (pin "2" (uuid 8d784ad0-e7f7-4365-98f3-dfe0876be79d))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "R16") (unit 1)
         )
@@ -2052,7 +2108,7 @@
     )
     (pin "1" (uuid 023041e7-c89c-4146-b1e8-721b2e10215e))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR09") (unit 1)
         )
@@ -2094,7 +2150,7 @@
     (pin "2" (uuid 67be9fae-a412-4298-b551-88b7d7211cd7))
     (pin "3" (uuid a8244df4-3d0a-4887-8833-393dac937f99))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "Q1") (unit 1)
         )
@@ -2146,7 +2202,7 @@
     (pin "11" (uuid e2649546-ec0e-4c99-8c0b-13002fd50d98))
     (pin "6" (uuid cc681c2c-636f-48b6-88bc-ce0030c8a22d))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "U2") (unit 5)
         )
@@ -2172,7 +2228,7 @@
     (pin "1" (uuid 1b119d62-f585-40c2-a75b-14e1b40c0927))
     (pin "2" (uuid e12e4ba2-bd47-4dd1-a015-784c2c3af162))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "C4") (unit 1)
         )
@@ -2224,7 +2280,7 @@
     (pin "11" (uuid ada40308-f159-421a-88a1-ef8ed8353a4a))
     (pin "6" (uuid e9eb301b-2d84-4003-a56a-6b5454eb9863))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "U2") (unit 1)
         )
@@ -2274,7 +2330,7 @@
     (pin "11" (uuid decfce40-9453-461b-9f54-545719d9f32f))
     (pin "4" (uuid 47c2afab-1ce7-4197-bdab-b60160fe7b60))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "U1") (unit 3)
         )
@@ -2306,7 +2362,7 @@
     (pin "1" (uuid 4dac59f8-9184-43cb-84ad-f6f50f0ce50b))
     (pin "2" (uuid 80d18bc3-015b-4eeb-99d6-4225375fdd56))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "D2") (unit 1)
         )
@@ -2331,7 +2387,7 @@
     )
     (pin "1" (uuid 28f1d0ca-f0a4-46b9-94b9-9c6c8fcb6db5))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR014") (unit 1)
         )
@@ -2357,7 +2413,7 @@
     (pin "1" (uuid d35414ba-54fe-4fc2-aa82-94ef913d5996))
     (pin "2" (uuid 7e6a846a-02d5-4219-8f38-5f21fc06ca3f))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "R17") (unit 1)
         )
@@ -2383,7 +2439,7 @@
     (pin "1" (uuid f65a9217-9c6b-4eb2-961f-95b434917e2d))
     (pin "2" (uuid 574ecc0d-e222-4a4c-87d9-4b859aecc6df))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "R11") (unit 1)
         )
@@ -2409,7 +2465,7 @@
     (pin "1" (uuid 8c5d8aaa-b0c6-4066-97d1-33cbb4fb87a5))
     (pin "2" (uuid e7bc99da-376d-4a1f-90bc-7c91252adcfe))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "C3") (unit 1)
         )
@@ -2435,7 +2491,7 @@
     (pin "1" (uuid efef8a9a-f2b4-436f-a64f-9ef2602766ad))
     (pin "2" (uuid 37f4846d-67d8-47eb-81ac-2dae9b8d517c))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "C1") (unit 1)
         )
@@ -2460,7 +2516,7 @@
     )
     (pin "1" (uuid c2b9293f-6a5f-4aac-a7f9-ada8446d7fe5))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR06") (unit 1)
         )
@@ -2485,7 +2541,7 @@
     )
     (pin "1" (uuid 6412423b-ee54-4e2d-ae74-fb2c6628e35f))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR010") (unit 1)
         )
@@ -2510,7 +2566,7 @@
     )
     (pin "1" (uuid 7ad8c00f-4e9b-48b8-970d-3d40dcfa1fda))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR017") (unit 1)
         )
@@ -2536,7 +2592,7 @@
     (pin "1" (uuid 8e57b989-6e58-4007-95a0-b1f41be5fc0a))
     (pin "2" (uuid d96407d6-eb85-4356-a057-a106a03e62cc))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "C5") (unit 1)
         )
@@ -2586,7 +2642,7 @@
     (pin "11" (uuid cb8e83e5-848a-43a1-9b1b-ea5e45a9f981))
     (pin "4" (uuid e75e472a-01db-46c0-9846-68e2bd85b35d))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "U1") (unit 5)
         )
@@ -2612,7 +2668,7 @@
     (pin "1" (uuid 685c5f33-f6a1-434b-9bc7-0562c577b481))
     (pin "2" (uuid 6e2dfb33-0929-4c5f-8826-846931282c70))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "C2") (unit 1)
         )
@@ -2638,7 +2694,7 @@
     (pin "1" (uuid 08592b97-e543-4cdd-9281-5f0842b05c0b))
     (pin "2" (uuid a311dd9f-fb90-4a2e-8386-723385ab8d8e))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "R4") (unit 1)
         )
@@ -2663,7 +2719,7 @@
     )
     (pin "1" (uuid 099f2f18-8f40-4aca-9a03-8d12d60a6f86))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR012") (unit 1)
         )
@@ -2689,7 +2745,7 @@
     (pin "1" (uuid be3bc001-7056-42df-a18b-7fce389574f7))
     (pin "2" (uuid d166a2dc-010e-4959-a388-7e10d036fc4b))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "R7") (unit 1)
         )
@@ -2728,7 +2784,7 @@
     (pin "5" (uuid 76c39e10-4266-49a5-8c8d-fe548ffab649))
     (pin "6" (uuid 2b37eadb-2523-4e70-b718-1c8e82ebd8ae))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "SW1/HPLP1") (unit 1)
         )
@@ -2754,35 +2810,9 @@
     (pin "1" (uuid b7b523c9-d6a6-4eda-ada6-89858ae847d8))
     (pin "2" (uuid 23c4895f-1fc6-427a-9a21-3420a794bcba))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "R9") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 149.86 182.88 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 6d1974d6-b26f-4341-b9ec-2899222dedda)
-    (property "Reference" "R8" (at 149.86 176.53 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "10k" (at 149.86 179.07 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" (at 149.86 184.658 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 149.86 182.88 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2bd2b44a-6c4c-4084-abef-6a2f040c398c))
-    (pin "2" (uuid a52067a0-dcf6-465c-a695-0ed6a232e5d3))
-    (instances
-      (project "VCF_Test"
-        (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
-          (reference "R8") (unit 1)
         )
       )
     )
@@ -2816,7 +2846,7 @@
     (pin "2" (uuid 15e7e2fc-78ef-4704-9285-cbd43574e7c9))
     (pin "3" (uuid ba3b3f14-43f4-4f81-aa34-d2dda145d647))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "SW2/OCT1") (unit 1)
         )
@@ -2845,7 +2875,7 @@
     (pin "1" (uuid 856c9858-c3d6-41f3-8d60-eb57452a0825))
     (pin "2" (uuid 5e53c471-46a4-4601-8a6b-a449050a8f3e))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "J4") (unit 1)
         )
@@ -2871,7 +2901,7 @@
     (pin "1" (uuid a205f47b-9b7b-4853-aabc-8b15fdc2ea4b))
     (pin "2" (uuid fdbca10c-1272-4b94-9e7b-d563113d2328))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "R3") (unit 1)
         )
@@ -2896,7 +2926,7 @@
     )
     (pin "1" (uuid 3a72aecd-f081-47f8-9f27-5cb1ab458d68))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR02") (unit 1)
         )
@@ -2921,7 +2951,7 @@
     )
     (pin "1" (uuid 9d6f5970-2344-4531-bc20-ae6c48a3f3a0))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR011") (unit 1)
         )
@@ -2950,7 +2980,7 @@
     (pin "1" (uuid a0552db4-9e8b-44d3-af27-a7150d631921))
     (pin "2" (uuid 1e15e5f5-3887-413c-92bc-82ff728c7b91))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "J2") (unit 1)
         )
@@ -2964,7 +2994,7 @@
     (property "Reference" "R14" (at 104.14 49.53 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "2.2k" (at 104.14 52.07 0)
+    (property "Value" "1.5k" (at 104.14 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" (at 99.822 50.8 90)
@@ -2976,7 +3006,7 @@
     (pin "1" (uuid 48bd9fce-7bf7-4938-a8dc-6685936b10b0))
     (pin "2" (uuid 1ace12a3-b05e-4110-9c9a-ee012ffb83f0))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "R14") (unit 1)
         )
@@ -3026,9 +3056,44 @@
     (pin "11" (uuid bd113d3a-ca05-4560-a986-7315071d63b8))
     (pin "4" (uuid 16c0f2bd-1dbf-4650-a935-6b51788a35e2))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "U1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R_Trim") (at 149.86 182.88 270) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid a104d09b-db8b-4ca5-a3ce-753e80217263)
+    (property "Reference" "R8" (at 149.86 175.26 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "10k" (at 149.86 177.8 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 149.86 184.658 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 149.86 182.88 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Note" "FEEDBK." (at 149.86 186.69 90)
+      (effects (font (size 1.27 1.27) bold))
+    )
+    (property "Sim.Device" "R" (at 149.86 182.88 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=+ 2=-" (at 149.86 182.88 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid fcd0435e-74ee-438b-82f5-42e544459e1f))
+    (pin "2" (uuid d9154f89-ec90-4a2d-abe5-e0f09554501a))
+    (instances
+      (project "VCF_MS-20"
+        (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
+          (reference "R8") (unit 1)
         )
       )
     )
@@ -3051,7 +3116,7 @@
     )
     (pin "1" (uuid 1fc463dd-05a6-4945-bac5-e8ae1e984c52))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR016") (unit 1)
         )
@@ -3077,7 +3142,7 @@
     (pin "1" (uuid a039dd43-52c5-454e-bc52-1d91ba8c6873))
     (pin "2" (uuid 8269ad05-dba0-48bb-b098-bb724e12158c))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "C8") (unit 1)
         )
@@ -3102,7 +3167,7 @@
     )
     (pin "1" (uuid 5ea8b2d8-7ea8-4e5b-b155-a924fbe91ef2))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR020") (unit 1)
         )
@@ -3113,7 +3178,7 @@
   (symbol (lib_id "Device:R_Potentiometer") (at 39.37 44.45 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid aca5699d-69a7-4c16-9753-51fa5d59b092)
-    (property "Reference" "RV2/CV1" (at 36.83 45.72 0)
+    (property "Reference" "RV2" (at 36.83 45.72 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k / lin" (at 36.83 43.18 0)
@@ -3134,13 +3199,16 @@
     (property "Sim.Params" "r=50k" (at 39.37 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Note" "CV-1" (at 44.45 46.99 0)
+      (effects (font (size 1.27 1.27) bold))
+    )
     (pin "1" (uuid 5f42d6d6-dbd1-482a-b99b-9d4702a50915))
     (pin "2" (uuid a60d7d8e-92cb-49fb-bce8-4ac12d5b1beb))
     (pin "3" (uuid b232cef3-78e1-4471-8ab0-1e4f967e1d49))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
-          (reference "RV2/CV1") (unit 1)
+          (reference "RV2") (unit 1)
         )
       )
     )
@@ -3163,7 +3231,7 @@
     )
     (pin "1" (uuid 70f46143-621d-4c07-8fa0-b82820b872e2))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR019") (unit 1)
         )
@@ -3188,7 +3256,7 @@
     )
     (pin "1" (uuid fc1df1df-bf29-480e-a0c9-b366b650eee4))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR018") (unit 1)
         )
@@ -3214,7 +3282,7 @@
     (pin "1" (uuid 6af63520-1a93-4fe5-b610-cd0c19e31314))
     (pin "2" (uuid a28670bc-afba-47a3-8eda-70fc68ce2959))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "R10") (unit 1)
         )
@@ -3240,7 +3308,7 @@
     (pin "1" (uuid 97363cc8-693e-460f-a7b1-e9bfa63624ff))
     (pin "2" (uuid 848a666a-d182-4fe3-871f-9d60bdc099d9))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "C6") (unit 1)
         )
@@ -3265,7 +3333,7 @@
     )
     (pin "1" (uuid f3cd4186-23c2-477f-99fc-9143250279aa))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR04") (unit 1)
         )
@@ -3291,7 +3359,7 @@
     (pin "1" (uuid 5e48ba23-cd41-478d-bb3f-c6e3e91b78cf))
     (pin "2" (uuid bccda8dd-dd2e-4eb7-816f-5874e26b0450))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "R5") (unit 1)
         )
@@ -3317,7 +3385,7 @@
     (pin "1" (uuid 58a30f6e-3e99-4889-a8a0-484979e4506f))
     (pin "2" (uuid eaffd241-7ed2-48a9-bbe4-3e7e655afe33))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "R18") (unit 1)
         )
@@ -3359,7 +3427,7 @@
     (pin "2" (uuid 8f04e498-8770-44ad-9ff6-7160470f21ab))
     (pin "3" (uuid 7815df99-9da8-457a-b052-ea870e3ec19d))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "Q2") (unit 1)
         )
@@ -3385,7 +3453,7 @@
     (pin "1" (uuid 9725fba1-050c-466b-a8f5-43875e6a0358))
     (pin "2" (uuid 73227a0c-452e-4641-b999-428962781d40))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "R1") (unit 1)
         )
@@ -3410,7 +3478,7 @@
     )
     (pin "1" (uuid 0a604a7f-2bf0-42f4-bd23-40cbbd18675b))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR07") (unit 1)
         )
@@ -3449,7 +3517,7 @@
     (pin "5" (uuid 8c875cb6-2d86-48c0-9b79-ae1c00e329cf))
     (pin "6" (uuid f5ceb4ec-ec3e-4591-8551-c5623de070a5))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "SW1/HPLP1") (unit 2)
         )
@@ -3499,7 +3567,7 @@
     (pin "11" (uuid 484427ca-aecd-4985-9368-3143213c9c48))
     (pin "4" (uuid 6ee52479-7625-4ec9-aa26-82c9dac76796))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "U1") (unit 2)
         )
@@ -3524,7 +3592,7 @@
     )
     (pin "1" (uuid 6526f83a-261b-4f63-860b-89688fb51da5))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR08") (unit 1)
         )
@@ -3574,7 +3642,7 @@
     (pin "11" (uuid 1da2cab1-57d7-4e25-b680-6a81f3ea3337))
     (pin "4" (uuid a374b432-326c-4c81-943a-dce4d72828e9))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "U1") (unit 4)
         )
@@ -3626,7 +3694,7 @@
     (pin "11" (uuid dbd16fe8-eea6-4a16-abd0-e80b17f53ef0))
     (pin "6" (uuid 9b164281-74b9-457d-8a85-f84447fd7e4a))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "U2") (unit 3)
         )
@@ -3652,7 +3720,7 @@
     (pin "1" (uuid c94afbc5-328f-4261-837a-f8d158e80d7c))
     (pin "2" (uuid 5b6e0258-6884-4c4e-b410-ac7dec064ecf))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "R12") (unit 1)
         )
@@ -3699,7 +3767,7 @@
     (pin "9" (uuid 4a0a7f9f-1093-4989-a577-d887b1732c39))
     (pin "MP" (uuid 9ab85c94-08c5-483e-a644-f78c03fd7fd7))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "J1") (unit 1)
         )
@@ -3725,7 +3793,7 @@
     (pin "1" (uuid f24a0dd1-ce97-4d1a-a5e0-bc665105f137))
     (pin "2" (uuid b381b2b9-16bd-4037-950a-301b0de9e643))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "R6") (unit 1)
         )
@@ -3754,7 +3822,7 @@
     (pin "1" (uuid 815ba2a5-faf0-4f61-9f7a-e1aea55faa38))
     (pin "2" (uuid 8549c4b0-b7da-4e07-bbcc-da3adfc9d777))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "J3") (unit 1)
         )
@@ -3768,7 +3836,7 @@
     (property "Reference" "R13" (at 171.45 130.81 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "1.5k" (at 171.45 133.35 90)
+    (property "Value" "2.2k" (at 171.45 133.35 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" (at 171.45 135.382 90)
@@ -3780,7 +3848,7 @@
     (pin "1" (uuid 342ad20d-7716-4329-bda9-8e8f432f1619))
     (pin "2" (uuid 009a9f3b-f690-4e85-879e-1f260af62df0))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "R13") (unit 1)
         )
@@ -3806,7 +3874,7 @@
     (pin "1" (uuid 417491ae-456c-4f78-9869-2191dfaaa444))
     (pin "2" (uuid 9bbd5fa5-fdba-44b9-8a03-216091f6f039))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "R2") (unit 1)
         )
@@ -3832,7 +3900,7 @@
     (pin "1" (uuid 60d302c9-0771-4527-b320-537b47201304))
     (pin "2" (uuid eb4e8135-abe3-4d06-9cde-db2d519ac53e))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "R15") (unit 1)
         )
@@ -3857,7 +3925,7 @@
     )
     (pin "1" (uuid 1956c00c-a5df-44ce-80d3-60a0a58e4e89))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR015") (unit 1)
         )
@@ -3882,7 +3950,7 @@
     )
     (pin "1" (uuid f53058be-c072-4de6-bce1-4436a04bb0f2))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR05") (unit 1)
         )
@@ -3908,7 +3976,7 @@
     (pin "1" (uuid 6d42b3fc-4feb-465a-85e3-64c7a04ed9dc))
     (pin "2" (uuid 13870ceb-2a66-499d-8c59-3c7cde23206d))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "C9") (unit 1)
         )
@@ -3933,7 +4001,7 @@
     )
     (pin "1" (uuid bb02ce7f-9a3b-4feb-aab0-bb1ae45f054d))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR03") (unit 1)
         )
@@ -3944,7 +4012,7 @@
   (symbol (lib_id "Device:R_Potentiometer") (at 39.37 156.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f857274d-b4e8-4d7d-a7d4-9d5f251cfa3e)
-    (property "Reference" "RV4/LVL1" (at 36.83 154.94 0)
+    (property "Reference" "RV4" (at 36.83 154.94 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k" (at 36.83 157.48 0)
@@ -3965,13 +4033,16 @@
     (property "Sim.Params" "r=0" (at 39.37 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Note" "LEVEL" (at 44.45 158.75 0)
+      (effects (font (size 1.27 1.27) bold))
+    )
     (pin "1" (uuid 8703cdb6-d705-466d-a34f-f679e4198e92))
     (pin "2" (uuid 30dc1a86-1fa6-459b-855d-117f83921936))
     (pin "3" (uuid b0fbd35c-1359-4ea7-9ea9-dfde34c833d4))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
-          (reference "RV4/LVL1") (unit 1)
+          (reference "RV4") (unit 1)
         )
       )
     )
@@ -3994,7 +4065,7 @@
     )
     (pin "1" (uuid 077f7e9f-446a-498b-8baf-aa6007475223))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR01") (unit 1)
         )
@@ -4026,7 +4097,7 @@
     (pin "1" (uuid ef919811-ff6d-4bd8-af86-e8d64b390471))
     (pin "2" (uuid 4b7055c3-88e2-40d1-8d6d-d6a6e597b996))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "D1") (unit 1)
         )
@@ -4037,7 +4108,7 @@
   (symbol (lib_id "Device:R_Potentiometer") (at 39.37 71.12 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fc39a1ee-4f61-45c4-b270-f7973f3d54d3)
-    (property "Reference" "RV3/FILT1" (at 36.83 72.39 0)
+    (property "Reference" "RV3" (at 36.83 72.39 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k / lin" (at 36.83 69.85 0)
@@ -4058,13 +4129,16 @@
     (property "Sim.Params" "r=50k" (at 39.37 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Note" "CUTOFF" (at 45.72 73.66 0)
+      (effects (font (size 1.27 1.27) bold))
+    )
     (pin "1" (uuid 2288d3bb-ec15-4e8e-b988-0376d6a3ff19))
     (pin "2" (uuid d95320e9-de65-4208-8418-ef63977dae10))
     (pin "3" (uuid d3844595-58ca-4f08-a52f-e8a1d958c70e))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
-          (reference "RV3/FILT1") (unit 1)
+          (reference "RV3") (unit 1)
         )
       )
     )
@@ -4087,7 +4161,7 @@
     )
     (pin "1" (uuid 1805c57f-18ab-4183-b042-65f4bdd38f8e))
     (instances
-      (project "VCF_Test"
+      (project "VCF_MS-20"
         (path "/f914052e-7d5a-47de-adb3-63d62fb99541"
           (reference "#PWR021") (unit 1)
         )
