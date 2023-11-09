@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>C:\Users\zykure\Documents\VCF_Test\VCF_Test.kicad_sch</source>
-    <date>07.11.2023 08:31:52</date>
+    <source>C:\Users\zykure\Sync\KiCad\VCF_MS-20\VCF_MS-20.kicad_sch</source>
+    <date>10.11.2023 00:05:23</date>
     <tool>Eeschema 7.0.8</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title/>
+        <title>Late MS-20 VCO / Eurorack</title>
         <company/>
         <rev/>
         <date/>
-        <source>VCF_Test.kicad_sch</source>
+        <source>VCF_MS-20.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
@@ -29,7 +29,7 @@
       <footprint>Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm</footprint>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
       <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
@@ -40,7 +40,7 @@
       <footprint>Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm</footprint>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
       <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
@@ -51,7 +51,7 @@
       <footprint>Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm</footprint>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
       <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
@@ -62,7 +62,7 @@
       <footprint>Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm</footprint>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
       <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
@@ -73,7 +73,7 @@
       <footprint>Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm</footprint>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
       <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
@@ -84,7 +84,7 @@
       <footprint>Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm</footprint>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
       <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
@@ -95,7 +95,7 @@
       <footprint>Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm</footprint>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
       <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
@@ -106,7 +106,7 @@
       <footprint>Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm</footprint>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
       <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
@@ -115,9 +115,15 @@
     <comp ref="D1">
       <value>LED</value>
       <footprint>LED_THT:LED_D3.0mm</footprint>
+      <fields>
+        <field name="Sim.Device">D</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sim.Device" value="D"/>
+      <property name="Sim.Pins" value="1=K 2=A"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Light emitting diode"/>
       <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -126,9 +132,15 @@
     <comp ref="D2">
       <value>LED</value>
       <footprint>LED_THT:LED_D3.0mm</footprint>
+      <fields>
+        <field name="Sim.Device">D</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sim.Device" value="D"/>
+      <property name="Sim.Pins" value="1=K 2=A"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Light emitting diode"/>
       <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -137,9 +149,19 @@
     <comp ref="J1">
       <value>POWER</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Sim.Device">V</field>
+        <field name="Sim.Params">dc=12</field>
+        <field name="Sim.Pins">1=+ 9=-</field>
+        <field name="Sim.Type">DC</field>
+      </fields>
       <libsource lib="Connector_Generic_MountingPin" part="Conn_02x05_Odd_Even_MountingPin" description="Generic connectable mounting pin connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sim.Device" value="V"/>
+      <property name="Sim.Type" value="DC"/>
+      <property name="Sim.Pins" value="1=+ 9=-"/>
+      <property name="Sim.Params" value="dc=12"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Generic connectable mounting pin connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
@@ -148,9 +170,13 @@
     <comp ref="J2">
       <value>AUDIO IN</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Sim.Enable">0</field>
+      </fields>
       <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="Sim.Enable" value="0"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
       <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
@@ -159,9 +185,13 @@
     <comp ref="J3">
       <value>AUDIO OUT</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Sim.Enable">0</field>
+      </fields>
       <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="Sim.Enable" value="0"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
       <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
@@ -170,33 +200,61 @@
     <comp ref="J4">
       <value>CV IN</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Sim.Enable">0</field>
+      </fields>
       <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="Sim.Enable" value="0"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
       <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>8599c490-81dc-4528-b8a8-2af27110a69e</tstamps>
     </comp>
     <comp ref="Q1">
-      <value>BC559</value>
+      <value>BC558</value>
       <footprint>Package_TO_SOT_THT:TO-92_Inline_Wide</footprint>
       <datasheet>https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf</datasheet>
+      <fields>
+        <field name="Sim.Device">PNP</field>
+        <field name="Sim.Library">C:\Users\zykure\Downloads\BC557.lib</field>
+        <field name="Sim.Name">BC557B</field>
+        <field name="Sim.Pins">1=C 2=B 3=E</field>
+        <field name="Sim.Type">GUMMELPOON</field>
+      </fields>
       <libsource lib="Transistor_BJT" part="BC559" description="0.1A Ic, 30V Vce, PNP Small Signal Transistor, TO-92"/>
+      <property name="Sim.Library" value="C:\Users\zykure\Downloads\BC557.lib"/>
+      <property name="Sim.Name" value="BC557B"/>
+      <property name="Sim.Device" value="PNP"/>
+      <property name="Sim.Type" value="GUMMELPOON"/>
+      <property name="Sim.Pins" value="1=C 2=B 3=E"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="0.1A Ic, 30V Vce, PNP Small Signal Transistor, TO-92"/>
       <property name="ki_keywords" value="PNP Transistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>13b6bb19-66fc-4d34-b026-45679689a2d2</tstamps>
     </comp>
     <comp ref="Q2">
-      <value>BC559</value>
+      <value>BC558</value>
       <footprint>Package_TO_SOT_THT:TO-92_Inline_Wide</footprint>
       <datasheet>https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf</datasheet>
+      <fields>
+        <field name="Sim.Device">PNP</field>
+        <field name="Sim.Library">C:\Users\zykure\Downloads\BC557.lib</field>
+        <field name="Sim.Name">BC557B</field>
+        <field name="Sim.Pins">1=C 2=B 3=E</field>
+        <field name="Sim.Type">GUMMELPOON</field>
+      </fields>
       <libsource lib="Transistor_BJT" part="BC559" description="0.1A Ic, 30V Vce, PNP Small Signal Transistor, TO-92"/>
+      <property name="Sim.Library" value="C:\Users\zykure\Downloads\BC557.lib"/>
+      <property name="Sim.Name" value="BC557B"/>
+      <property name="Sim.Device" value="PNP"/>
+      <property name="Sim.Type" value="GUMMELPOON"/>
+      <property name="Sim.Pins" value="1=C 2=B 3=E"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="0.1A Ic, 30V Vce, PNP Small Signal Transistor, TO-92"/>
       <property name="ki_keywords" value="PNP Transistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -207,7 +265,7 @@
       <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -218,7 +276,7 @@
       <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -229,7 +287,7 @@
       <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -240,7 +298,7 @@
       <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -251,7 +309,7 @@
       <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -262,7 +320,7 @@
       <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -273,7 +331,7 @@
       <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -281,21 +339,28 @@
     </comp>
     <comp ref="R8">
       <value>10k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal</footprint>
-      <libsource lib="Device" part="R" description="Resistor"/>
+      <fields>
+        <field name="Note">FEEDBK.</field>
+        <field name="Sim.Device">R</field>
+        <field name="Sim.Pins">1=+ 2=-</field>
+      </fields>
+      <libsource lib="Device" part="R_Trim" description="Trimmable resistor (preset resistor)"/>
+      <property name="Note" value="FEEDBK."/>
+      <property name="Sim.Device" value="R"/>
+      <property name="Sim.Pins" value="1=+ 2=-"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
-      <property name="ki_keywords" value="R res resistor"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
+      <property name="ki_description" value="Trimmable resistor (preset resistor)"/>
+      <property name="ki_keywords" value="R res resistor variable potentiometer trimmer"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>6d1974d6-b26f-4341-b9ec-2899222dedda</tstamps>
+      <tstamps>a104d09b-db8b-4ca5-a3ce-753e80217263</tstamps>
     </comp>
     <comp ref="R9">
       <value>10k</value>
       <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -306,7 +371,7 @@
       <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -317,7 +382,7 @@
       <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -328,29 +393,29 @@
       <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>d7a53af3-3d3f-4612-8184-056efa7a3f7a</tstamps>
     </comp>
     <comp ref="R13">
-      <value>1.8k</value>
+      <value>2.2k</value>
       <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>e34a7182-594e-4479-80cc-eeecc5bbdd8f</tstamps>
     </comp>
     <comp ref="R14">
-      <value>1.8k</value>
+      <value>1.5k</value>
       <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -361,7 +426,7 @@
       <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -372,7 +437,7 @@
       <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -383,7 +448,7 @@
       <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -394,51 +459,91 @@
       <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>bb7db483-240b-4389-897b-54f9a2aaf14c</tstamps>
     </comp>
-    <comp ref="RV1/RESO1">
+    <comp ref="RV1">
       <value>100k / log</value>
       <footprint>Potentiometer_THT:Potentiometer_TT_P0915N</footprint>
+      <fields>
+        <field name="Note">RESON.</field>
+        <field name="Sim.Device">R</field>
+        <field name="Sim.Params">r=50k</field>
+        <field name="Sim.Pins">1=+ 2=-</field>
+      </fields>
       <libsource lib="Device" part="R_Potentiometer" description="Potentiometer"/>
+      <property name="Sim.Device" value="R"/>
+      <property name="Sim.Pins" value="1=+ 2=-"/>
+      <property name="Sim.Params" value="r=50k"/>
+      <property name="Note" value="RESON."/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Potentiometer"/>
       <property name="ki_keywords" value="resistor variable"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>068e50c4-24cf-4123-9189-291be586ca43</tstamps>
     </comp>
-    <comp ref="RV2/CV1">
+    <comp ref="RV2">
       <value>100k / lin</value>
       <footprint>Potentiometer_THT:Potentiometer_TT_P0915N</footprint>
+      <fields>
+        <field name="Note">CV-1</field>
+        <field name="Sim.Device">R</field>
+        <field name="Sim.Params">r=50k</field>
+        <field name="Sim.Pins">1=+ 2=-</field>
+      </fields>
       <libsource lib="Device" part="R_Potentiometer" description="Potentiometer"/>
+      <property name="Sim.Device" value="R"/>
+      <property name="Sim.Pins" value="1=+ 2=-"/>
+      <property name="Sim.Params" value="r=50k"/>
+      <property name="Note" value="CV-1"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Potentiometer"/>
       <property name="ki_keywords" value="resistor variable"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>aca5699d-69a7-4c16-9753-51fa5d59b092</tstamps>
     </comp>
-    <comp ref="RV3/FILT1">
+    <comp ref="RV3">
       <value>100k / lin</value>
       <footprint>Potentiometer_THT:Potentiometer_TT_P0915N</footprint>
+      <fields>
+        <field name="Note">CUTOFF</field>
+        <field name="Sim.Device">R</field>
+        <field name="Sim.Params">r=50k</field>
+        <field name="Sim.Pins">1=+ 2=-</field>
+      </fields>
       <libsource lib="Device" part="R_Potentiometer" description="Potentiometer"/>
+      <property name="Sim.Device" value="R"/>
+      <property name="Sim.Pins" value="1=+ 2=-"/>
+      <property name="Sim.Params" value="r=50k"/>
+      <property name="Note" value="CUTOFF"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Potentiometer"/>
       <property name="ki_keywords" value="resistor variable"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>fc39a1ee-4f61-45c4-b270-f7973f3d54d3</tstamps>
     </comp>
-    <comp ref="RV4/LVL1">
+    <comp ref="RV4">
       <value>100k</value>
       <footprint>Potentiometer_THT:Potentiometer_TT_P0915N</footprint>
+      <fields>
+        <field name="Note">LEVEL</field>
+        <field name="Sim.Device">R</field>
+        <field name="Sim.Params">r=0</field>
+        <field name="Sim.Pins">1=+ 2=-</field>
+      </fields>
       <libsource lib="Device" part="R_Potentiometer" description="Potentiometer"/>
+      <property name="Sim.Device" value="R"/>
+      <property name="Sim.Pins" value="1=+ 2=-"/>
+      <property name="Sim.Params" value="r=0"/>
+      <property name="Note" value="LEVEL"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Potentiometer"/>
       <property name="ki_keywords" value="resistor variable"/>
       <sheetpath names="/" tstamps="/"/>
@@ -447,9 +552,17 @@
     <comp ref="SW1/HPLP1">
       <value>SW_DPDT_x2</value>
       <footprint>Connector_PinHeader_2.00mm:PinHeader_2x03_P2.00mm_Vertical</footprint>
+      <fields>
+        <field name="Sim.Device">R</field>
+        <field name="Sim.Params">r=0</field>
+        <field name="Sim.Pins">1=+ 2=-</field>
+      </fields>
       <libsource lib="Switch" part="SW_DPDT_x2" description="Switch, dual pole double throw, separate symbols"/>
+      <property name="Sim.Device" value="R"/>
+      <property name="Sim.Pins" value="1=+ 2=-"/>
+      <property name="Sim.Params" value="r=0"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Switch, dual pole double throw, separate symbols"/>
       <property name="ki_keywords" value="switch dual-pole double-throw DPDT spdt ON-ON"/>
       <sheetpath names="/" tstamps="/"/>
@@ -458,9 +571,17 @@
     <comp ref="SW2/OCT1">
       <value>SW_SPDT/ATT</value>
       <footprint>Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical</footprint>
+      <fields>
+        <field name="Sim.Device">R</field>
+        <field name="Sim.Params">r=0</field>
+        <field name="Sim.Pins">1=+ 2=-</field>
+      </fields>
       <libsource lib="Switch" part="SW_SPDT" description="Switch, single pole double throw"/>
+      <property name="Sim.Device" value="R"/>
+      <property name="Sim.Pins" value="1=+ 2=-"/>
+      <property name="Sim.Params" value="r=0"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Switch, single pole double throw"/>
       <property name="ki_keywords" value="switch single-pole double-throw spdt ON-ON"/>
       <sheetpath names="/" tstamps="/"/>
@@ -470,21 +591,41 @@
       <value>LM324</value>
       <footprint>Package_DIP:DIP-14_W7.62mm</footprint>
       <datasheet>http://www.ti.com/lit/ds/symlink/lm2902-n.pdf</datasheet>
+      <fields>
+        <field name="Sim.Device">SUBCKT</field>
+        <field name="Sim.Library">C:\Users\zykure\Downloads\LM324-quad.lib</field>
+        <field name="Sim.Name">LM324</field>
+        <field name="Sim.Pins">1=1out 2=1in- 3=1in+ 4=vcc+ 5=2in+ 6=2in- 7=2out 8=3out 9=3in- 10=3in+ 11=vcc- 12=4in+ 13=4in- 14=4out</field>
+      </fields>
       <libsource lib="Amplifier_Operational" part="LM324" description="Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14"/>
+      <property name="Sim.Library" value="C:\Users\zykure\Downloads\LM324-quad.lib"/>
+      <property name="Sim.Name" value="LM324"/>
+      <property name="Sim.Device" value="SUBCKT"/>
+      <property name="Sim.Pins" value="1=1out 2=1in- 3=1in+ 4=vcc+ 5=2in+ 6=2in- 7=2out 8=3out 9=3in- 10=3in+ 11=vcc- 12=4in+ 13=4in- 14=4out"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14"/>
       <property name="ki_keywords" value="quad opamp"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>d0fb11b8-1190-4234-830b-c34903821049 97c6135d-9f86-444e-8583-572d1029a341 ccb2868c-de5c-45cc-a2fb-6cfa39c21de0 59b6f5b3-f19d-42fc-9086-951bedad6f91 24fc63b6-2369-4082-b9a3-b64ff7b209e0</tstamps>
+      <tstamps>ccb2868c-de5c-45cc-a2fb-6cfa39c21de0 97c6135d-9f86-444e-8583-572d1029a341 59b6f5b3-f19d-42fc-9086-951bedad6f91 d0fb11b8-1190-4234-830b-c34903821049 24fc63b6-2369-4082-b9a3-b64ff7b209e0</tstamps>
     </comp>
     <comp ref="U2">
       <value>LM13700</value>
       <footprint>Package_DIP:DIP-16_W7.62mm</footprint>
       <datasheet>http://www.ti.com/lit/ds/symlink/lm13700.pdf</datasheet>
+      <fields>
+        <field name="Sim.Device">SUBCKT</field>
+        <field name="Sim.Library">C:\Users\zykure\Downloads\LM13700-dual.lib</field>
+        <field name="Sim.Name">LM13700</field>
+        <field name="Sim.Pins">1=1iab 2=1lin 3=1in+ 4=1in- 5=1out 6=vcc- 7=1bin 8=1buf 9=2buf 10=2bin 11=vcc+ 12=2out 13=2in- 14=2in+ 15=2iab 16=2lin</field>
+      </fields>
       <libsource lib="Amplifier_Operational" part="LM13700" description="Dual Operational Transconductance Amplifiers with Linearizing Diodes and Buffers, DIP-16/SOIC-16"/>
+      <property name="Sim.Library" value="C:\Users\zykure\Downloads\LM13700-dual.lib"/>
+      <property name="Sim.Name" value="LM13700"/>
+      <property name="Sim.Device" value="SUBCKT"/>
+      <property name="Sim.Pins" value="1=1iab 2=1lin 3=1in+ 4=1in- 5=1out 6=vcc- 7=1bin 8=1buf 9=2buf 10=2bin 11=vcc+ 12=2out 13=2in- 14=2in+ 15=2iab 16=2lin"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="VCF_Test.kicad_sch"/>
+      <property name="Sheetfile" value="VCF_MS-20.kicad_sch"/>
       <property name="ki_description" value="Dual Operational Transconductance Amplifiers with Linearizing Diodes and Buffers, DIP-16/SOIC-16"/>
       <property name="ki_keywords" value="operational transconductance amplifier OTA"/>
       <sheetpath names="/" tstamps="/"/>
@@ -663,6 +804,22 @@
         <pin num="3" name="3" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Device" part="R_Trim">
+      <description>Trimmable resistor (preset resistor)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Trim</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Switch" part="SW_DPDT_x2">
       <description>Switch, dual pole double throw, separate symbols</description>
       <docs>~</docs>
@@ -741,7 +898,7 @@
       <node ref="C4" pin="1" pintype="passive"/>
       <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
-      <node ref="RV3/FILT1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="RV3" pin="3" pinfunction="3" pintype="passive"/>
       <node ref="U1" pin="4" pinfunction="V+" pintype="power_in"/>
       <node ref="U2" pin="11" pinfunction="V+" pintype="power_in"/>
     </net>
@@ -750,7 +907,7 @@
       <node ref="J1" pin="10" pinfunction="Pin_10" pintype="passive"/>
       <node ref="J1" pin="9" pinfunction="Pin_9" pintype="passive"/>
       <node ref="R12" pin="2" pintype="passive"/>
-      <node ref="RV3/FILT1" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="RV3" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="11" pinfunction="V-" pintype="power_in"/>
       <node ref="U2" pin="6" pinfunction="V-" pintype="power_in"/>
     </net>
@@ -774,10 +931,10 @@
       <node ref="R16" pin="2" pintype="passive"/>
       <node ref="R17" pin="2" pintype="passive"/>
       <node ref="R18" pin="2" pintype="passive"/>
-      <node ref="RV1/RESO1" pin="3" pinfunction="3" pintype="passive"/>
-      <node ref="RV2/CV1" pin="3" pinfunction="3" pintype="passive"/>
-      <node ref="RV4/LVL1" pin="3" pinfunction="3" pintype="passive"/>
-      <node ref="SW1/HPLP1" pin="6" pinfunction="C" pintype="passive"/>
+      <node ref="RV1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="RV2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="RV4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW1/HPLP1" pin="4" pinfunction="A" pintype="passive"/>
       <node ref="U1" pin="12" pinfunction="+" pintype="input"/>
     </net>
     <net code="4" name="Net-(C1-Pad1)">
@@ -788,20 +945,20 @@
     <net code="5" name="Net-(C6-Pad1)">
       <node ref="C6" pin="1" pintype="passive"/>
       <node ref="R1" pin="1" pintype="passive"/>
-      <node ref="RV4/LVL1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="RV4" pin="3" pinfunction="3" pintype="passive"/>
     </net>
     <net code="6" name="Net-(D1-A)">
       <node ref="C2" pin="2" pintype="passive"/>
       <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
-      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
       <node ref="U1" pin="1" pintype="output"/>
     </net>
     <net code="7" name="Net-(D1-K)">
       <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R13" pin="2" pintype="passive"/>
-      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
       <node ref="U1" pin="2" pinfunction="-" pintype="input"/>
     </net>
     <net code="8" name="Net-(J2-Pin_1)">
@@ -810,11 +967,12 @@
     </net>
     <net code="9" name="Net-(J3-Pin_1)">
       <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="SW1/HPLP1" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="RV1" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="SW2/OCT1" pin="2" pinfunction="B" pintype="passive"/>
     </net>
     <net code="10" name="Net-(J4-Pin_1)">
       <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="RV2/CV1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="RV2" pin="3" pinfunction="3" pintype="passive"/>
     </net>
     <net code="11" name="Net-(Q1-B)">
       <node ref="Q1" pin="2" pinfunction="B" pintype="input"/>
@@ -840,58 +998,57 @@
     </net>
     <net code="15" name="Net-(R2-Pad1)">
       <node ref="R2" pin="1" pintype="passive"/>
-      <node ref="RV2/CV1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="RV2" pin="2" pinfunction="2" pintype="passive"/>
     </net>
     <net code="16" name="Net-(R3-Pad1)">
       <node ref="R3" pin="1" pintype="passive"/>
-      <node ref="RV3/FILT1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="RV3" pin="2" pinfunction="2" pintype="passive"/>
     </net>
-    <net code="17" name="Net-(R4-Pad1)">
-      <node ref="R4" pin="1" pintype="passive"/>
-      <node ref="RV4/LVL1" pin="2" pinfunction="2" pintype="passive"/>
-    </net>
-    <net code="18" name="Net-(R9-Pad1)">
+    <net code="17" name="Net-(R9-Pad1)">
       <node ref="R9" pin="1" pintype="passive"/>
       <node ref="U2" pin="1" pintype="input"/>
     </net>
-    <net code="19" name="Net-(R10-Pad2)">
+    <net code="18" name="Net-(R10-Pad2)">
       <node ref="R10" pin="2" pintype="passive"/>
       <node ref="U2" pin="16" pintype="input"/>
     </net>
-    <net code="20" name="Net-(SW1/HPLP1A-A)">
-      <node ref="C3" pin="2" pintype="passive"/>
+    <net code="19" name="Net-(SW1/HPLP1A-A)">
+      <node ref="R4" pin="1" pintype="passive"/>
       <node ref="SW1/HPLP1" pin="1" pinfunction="A" pintype="passive"/>
-      <node ref="SW1/HPLP1" pin="4" pinfunction="A" pintype="passive"/>
-      <node ref="SW1/HPLP1" pin="5" pinfunction="B" pintype="passive"/>
+    </net>
+    <net code="20" name="Net-(SW1/HPLP1A-B)">
+      <node ref="RV4" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="SW1/HPLP1" pin="2" pinfunction="B" pintype="passive"/>
     </net>
     <net code="21" name="Net-(SW1/HPLP1A-C)">
-      <node ref="C8" pin="2" pintype="passive"/>
-      <node ref="R5" pin="1" pintype="passive"/>
-      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
       <node ref="SW1/HPLP1" pin="3" pinfunction="C" pintype="passive"/>
-      <node ref="U1" pin="6" pinfunction="-" pintype="input"/>
-      <node ref="U1" pin="7" pintype="output"/>
+      <node ref="SW1/HPLP1" pin="5" pinfunction="B" pintype="passive"/>
+      <node ref="SW1/HPLP1" pin="6" pinfunction="C" pintype="passive"/>
     </net>
     <net code="22" name="Net-(SW2/OCT1-A)">
-      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
       <node ref="SW2/OCT1" pin="1" pinfunction="A" pintype="passive"/>
     </net>
-    <net code="23" name="Net-(SW2/OCT1-B)">
-      <node ref="RV1/RESO1" pin="1" pinfunction="1" pintype="passive"/>
-      <node ref="SW2/OCT1" pin="2" pinfunction="B" pintype="passive"/>
-    </net>
-    <net code="24" name="Net-(SW2/OCT1-C)">
-      <node ref="C9" pin="2" pintype="passive"/>
+    <net code="23" name="Net-(SW2/OCT1-C)">
+      <node ref="C8" pin="2" pintype="passive"/>
       <node ref="SW2/OCT1" pin="3" pinfunction="C" pintype="passive"/>
     </net>
-    <net code="25" name="Net-(U1A-+)">
-      <node ref="RV1/RESO1" pin="2" pinfunction="2" pintype="passive"/>
+    <net code="24" name="Net-(U1A-+)">
+      <node ref="RV1" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="U1" pin="3" pinfunction="+" pintype="input"/>
     </net>
-    <net code="26" name="Net-(U1B-+)">
+    <net code="25" name="Net-(U1B-+)">
       <node ref="C2" pin="1" pintype="passive"/>
       <node ref="U1" pin="5" pinfunction="+" pintype="input"/>
       <node ref="U2" pin="5" pintype="output"/>
+    </net>
+    <net code="26" name="Net-(U1B--)">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="-" pintype="input"/>
+      <node ref="U1" pin="7" pintype="output"/>
     </net>
     <net code="27" name="Net-(U1C-+)">
       <node ref="C3" pin="1" pintype="passive"/>
@@ -916,11 +1073,11 @@
     </net>
     <net code="31" name="Net-(U2C-+)">
       <node ref="R15" pin="1" pintype="passive"/>
-      <node ref="R4" pin="2" pintype="passive"/>
       <node ref="U2" pin="3" pinfunction="+" pintype="input"/>
     </net>
     <net code="32" name="Net-(U2C--)">
       <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
       <node ref="R6" pin="2" pintype="passive"/>
       <node ref="U2" pin="4" pinfunction="-" pintype="input"/>
     </net>
