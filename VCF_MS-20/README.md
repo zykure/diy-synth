@@ -23,9 +23,9 @@ A voltage controller filter based on the "late" Korg MS-20 design. Original desi
 
 * Circuit schematics: [VCF_MS-20_plan.pdf](./schematics/VCF_MS-20_plan.pdf)
 * Board layout: [VCF_MS-20_pcb.pdf](./schematics/VCF_MS-20_pcb.pdf)
- * The board is a 21 x 36 hole (56 x 97 mm) perforated PCB that should fit in most Eurorack cases. The full depth is about 60 mm.
+   * The board is a 21 x 36 hole (56 x 97 mm) perforated PCB that should fit in most Eurorack cases. The full depth is about 60 mm.
 * Board layout with frontplate design: [VCF_MS-20_pcb_all.pdf](./schematics/VCF_MS-20_pcb_all.pdf)
- * The frontplate is designed for Eurorack cases and has a size of 3 U x 6 HP (127 x 30.5 mm)
+   * The frontplate is designed for Eurorack cases and has a size of 3 U x 6 HP (127 x 30.5 mm)
 
 
 ### Components (BOM)
@@ -63,7 +63,6 @@ A voltage controller filter based on the "late" Korg MS-20 design. Original desi
 Notes:
 * Use film capacitors in the audio signal path, not ceramic ones. (Ceramic ones have a voltage dependency that causes distortions.)
 * The feedback resistor R8 could be tuned to change the resonance characteristics. Hence R8 is replaced with a suitable trimpot. Check out the [circuit simulation][1] to see what this does.
-
 
 
 
