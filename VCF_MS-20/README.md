@@ -23,7 +23,9 @@ A voltage controller filter based on the "late" Korg MS-20 design. Original desi
 
 * Circuit schematics: (VCF_MS-20_plan.pdf)[./schematics/VCF_MS-20_plan.pdf]
 * Board layout: (VCF_MS-20_pcb.pdf)[./schematics/VCF_MS-20_pcb.pdf]
- * The board is a 21x36 hole (56x97 mm) perforated PCB that should fit in most Eurorack cases. The full depth is about 60 mm.
+ * The board is a 21 x 36 hole (56 x 97 mm) perforated PCB that should fit in most Eurorack cases. The full depth is about 60 mm.
+* Board layout with frontplate design: (VCF_MS-20_pcb_all.pdf)[./schematics/VCF_MS-20_pcb_all.pdf]
+ * The frontplate is designed for Eurorack cases and has a size of 3 U x 6 HP (127 x 30.5 mm)
 
 
 ### Components (BOM)
@@ -32,9 +34,9 @@ A voltage controller filter based on the "late" Korg MS-20 design. Original desi
 |----:|----:|-----------------------------:|--------------:|--------------------------------------------------|---------------|
 |    1|    1|                            C1|           4.7n|~                                                 |               |
 |    2|    2|                        C2, C3|           1.0n|~                                                 |film cap.      |
-|    3|    2|                        C4, C5|           470n|~                                                 |film cap.      |
+|    3|    2|                        C4, C5|           100n|~                                                 |               |
 |    4|    1|                            C6|           1.0u|~                                                 |               |
-|    5|    2|                        C8, C9|           100n|~                                                 |               |
+|    5|    2|                            C8|           470n|~                                                 |film cap.      |
 |    6|    2|                        D1, D2|            LED|~                                                 |               |
 |    7|    1|                            J1|          POWER|~                                                 |               |
 |    8|    1|                            J2|       AUDIO IN|~                                                 |               |
