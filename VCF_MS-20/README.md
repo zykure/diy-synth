@@ -33,34 +33,36 @@ A voltage controller filter based on the "late" Korg MS-20 design. Original desi
 |    1|    1|                            C1|           4.7n|~                                                 |               |
 |    2|    2|                        C2, C3|           1.0n|~                                                 |film cap.      |
 |    3|    2|                        C4, C5|           470n|~                                                 |film cap.      |
-|    4|    1|                            C6|           1.0u|~                                                 |               |
+|    4|    1|                            C6|           1.0u|~                                                 |optional       |
 |    5|    2|                        C8, C9|           100n|~                                                 |               |
 |    6|    2|                        D1, D2|            LED|~                                                 |               |
 |    7|    1|                            J1|          POWER|~                                                 |               |
 |    8|    1|                            J2|       AUDIO IN|~                                                 |               |
 |    9|    1|                            J3|      AUDIO OUT|~                                                 |               |
 |   10|    1|                            J4|          CV IN|~                                                 |               |
-|   11|    2|                        Q1, Q2|         BC558C|https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf|             |
-|   12|    1|                            R1|           200k|~                                                 |               |
+|   11|    2|                        Q1, Q2|         BC558C|https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf|matched      |
+|   12|    1|                            R1|           200k|~                                                 |optional       |
 |   13|    2|                        R2, R3|           100k|~                                                 |               |
 |   14|    6|       R4, R5, R6, R7, R9, R10|            10k|~                                                 |               |
-|   15|    1|                            R8|            10k|~                                                 |Feedback       |
+|   15|    1|                            R8|            10k|~                                                 |Feedback ctrl. |
 |   16|    1|                           R11|           4.7k|~                                                 |               |
 |   17|    1|                           R12|           470k|~                                                 |               |
 |   18|    1|                           R13|           2.2k|~                                                 |               |
 |   19|    1|                           R14|           1.5k|~                                                 |               |
 |   20|    4|            R15, R16, R17, R18|            220|~                                                 |               |
-|   21|    1|                           RV1|     100k / log|~                                                 |Resonance      |
-|   22|    2|                      RV2, RV3|     100k / lin|~                                                 |CV Amount      |
-|   23|    1|                           RV4|           100k|~                                                 |Input Level    |
-|   24|    1|                           SW1|     SW_DPDT_x2|~                                                 |HP/LP          |
-|   25|    1|                           SW2|       SW_SPDTT|~                                                 |6/12 dB        |
-|   26|    1|                            U1|         LM324N|http://www.ti.com/lit/ds/symlink/lm2902-n.pdf     |               |
+|   21|    1|                           RV1|     100k / log|~                                                 |Resonance ctrl.|
+|   22|    2|                      RV2, RV3|     100k / lin|~                                                 |CV Amount ctrl.|
+|   23|    1|                           RV4|           100k|~                                                 |Input Level ctrl.|
+|   24|    1|                           SW1|     SW_DPDT_x2|~                                                 |HP/LP mode     |
+|   25|    1|                           SW2|       SW_SPDTT|~                                                 |6/12 dB falloff|
+|   26|    1|                            U1|         LM324|http://www.ti.com/lit/ds/symlink/lm2902-n.pdf      |               |
 |   27|    1|                            U2|        LM13700|http://www.ti.com/lit/ds/symlink/lm13700.pdf      |               |
 
 Notes:
 * Use film capacitors in the audio signal path, not ceramic ones. (Ceramic ones have a voltage dependency that causes distortions.)
 * The feedback resistor R8 could be tuned to change the resonance characteristics. Hence R8 is replaced with a suitable trimpot. Check out the [circuit simulation][1] to see what this does.
+* For best results, the two transistors should be matched by their hFE value as good as possible. This can usually be done with a simple multimeter with transistor tester.
+* A passive low-pass filter (R1/C6) is added at the audio input to remove any DC voltage offset. This is completely optional and the components could be removed from the circuit.
 
 
 
