@@ -7,7 +7,7 @@ Schematics and related files for DIY modular synthesizer components.
 
 ![MS-20 PCB, 3D view](./pictures/VCF_MS-20_front_3d.png)
 
-A voltage controller filter based on the "late" Korg MS-20 design. Original design schematics from [Rene Schmitz](https://www.schmitzbits.de/ms20.html) and [Eddy Bergman](https://www.eddybergman.com/2019/12/synthesizer-build-part-12-korg-ms20.html?m=1).
+A voltage controlled filter based on the "late" Korg MS-20 design. Original design schematics from [Rene Schmitz](https://www.schmitzbits.de/ms20.html) and [Eddy Bergman](https://www.eddybergman.com/2019/12/synthesizer-build-part-12-korg-ms20.html?m=1).
 
 **Working Falstad circuit simulation (online):** [click here][1]
 
