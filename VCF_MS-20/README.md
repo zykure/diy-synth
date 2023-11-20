@@ -54,10 +54,10 @@ A voltage controlled filter based on the "late" Korg MS-20 design. Original desi
 |   18|    1|                           R13|           2.2k|~                                                 |               |
 |   19|    1|                           R14|           1.5k|~                                                 |               |
 |   20|    4|            R15, R16, R17, R18|            220|~                                                 |               |
-|   21|    2|                      RV1, RV4|    100k / log.|~                                                 |Resonance/Input lvl. ctrl.|
-|   22|    2|                      RV2, RV3|    100k / lin.|~                                                 |Cutoff/CV amt. ctrl.|
+|   21|    2|                      RV1, RV4|    100k / log.|~                                                 |Resonance/Input level ctrl.|
+|   22|    2|                      RV2, RV3|    100k / lin.|~                                                 |Cutoff/CV amount ctrl.|
 |   23|    1|                           SW1|     SW_DPDT_x2|~                                                 |HP/LP mode     |
-|   24|    1|                           SW2|       SW_SPDTT|~                                                 |6/12 dB falloff|
+|   24|    1|                           SW2|        SW_SPDT|~                                                 |6/12 dB falloff|
 |   25|    1|                            U1|          LM324|http://www.ti.com/lit/ds/symlink/lm2902-n.pdf     |               |
 |   26|    1|                            U2|        LM13700|http://www.ti.com/lit/ds/symlink/lm13700.pdf      |               |
 
